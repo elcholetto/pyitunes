@@ -78,6 +78,8 @@ class Library:
 				s.length = int(attributes.get('Total Time'))
 			if attributes.get('Grouping'):
 				s.grouping = attributes.get('Grouping')
+			if attributes.get('Persistent ID'):
+				s.persistentid = attributes.get('Persistent ID')        
 			if self.filesOnly==True and attributes.get('Track Type') == 'File':
 				if self.legacymode:
 					self.songs.append(s)

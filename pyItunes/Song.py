@@ -28,6 +28,7 @@ class Song:
 	grouping = None (String)
 	lastplayed = None (Time)
 	length = None (Integer)
+        persistentid (String)
 	"""
 	name = None
 	artist = None
@@ -56,5 +57,5 @@ class Song:
 	grouping = None
 	lastplayed = None
 	length = None
-	
+	persistentid = None
 	#title = property(getTitle,setTitle)
